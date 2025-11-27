@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: quirinda-devtech-auth
+  security:
+    user:
+      name: admin
+      password: admin123
+
+server:
+  port: 8080
+
+jwt:
+  secret: QuirindasDevTechSecretKeyForAuthenticationAndAuthorization123456
+  expiration: 86400000
+
+logging:
+  level:
+    root: INFO
+    com.quirinda: DEBUG
