@@ -5,6 +5,15 @@ spring:
     user:
       name: admin
       password: admin123
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth_db # Replace with your DB URL
+    username: postgres # Replace with your DB username
+    password: postgres # Replace with your DB password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # Automatically update the schema
+    show-sql: true
 
 server:
   port: 8080
